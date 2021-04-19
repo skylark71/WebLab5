@@ -1,0 +1,102 @@
+body {
+  
+  background-color: #BBFFFF;
+   
+}
+a {
+    color: #008000; /* Цвет обычной ссылки */ 
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+   }
+   a:visited {
+    color: #5f27cd; /* Цвет посещённой ссылки */
+   } 
+   a:hover {
+    color: black; /* Цвет ссылки при наведении на нее курсора мыши */  
+    text-decoration: underline; /* Добавляем подчеркивание */
+}
+h1 { /* Стиль заголовка 1-ого уровня */
+  color: black; 
+  font-size: 24pt;
+  font-family: Times new roman; 
+  font-weight: 400;
+}
+p1 { /* Стиль текста краткого описания товара */
+  color: #3742fa;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 16px;
+}
+h2 { /* Стиль заголовка 2-ого уровня */
+  color: #1C1C1C; 
+  font-size: 18pt;
+  font-weight: 400;
+}
+p { /* Стиль текста подробного описания товара */
+  color: #484343;
+  font-weight: 400;
+  font - size: 16px;
+  line-height: 24px;
+}
+ol { /* Стиль списка */
+    color: #8B7765;
+    list-style: none;
+    list-style-image: url(gl.JPG);
+    padding-left: 24px;
+}
+img { /* Рамка рисунка */
+    border: 5px solid #668B8B;
+    font-family: cursive; 
+}
+    img:hover {
+        border: 5px solid transparent;
+    }   
+
+/*Изменение стиля input*/
+input[type=text] {
+  border: 2px solid red;
+  border-radius: 4px;
+  padding: 20px 10px; 
+  line-height: 28px;
+  font-size:14px;
+  font-family : inherit;
+  color: #2f7d7d;
+  text-transform: capitalize;
+}
+input[type=email] {
+  border: 2px solid red;
+  border-radius: 4px;
+  line-height: 28px;
+  font-size:14px;
+  font-family : inherit;
+  color: #2f7d7d;
+  text-transform: capitalize;
+}
+textarea 
+{ 
+  border: 2px solid red;
+  border-radius: 4px;
+  line-height: 28px;
+  font-size:14px;
+  font-family: inherit;
+  color: #2f7d7d;
+  text-transform: capitalize;
+}
+
+p.firstLatter:first-letter 
+{
+    font-size: 1em;
+    padding: 5px 4px;
+    background: black;
+    color: white;
+    font-weight: bold;
+} 
+
+nav.navbar .dropdown:hover > .dropdown-menu
+{
+ display: block; 
+} 
+
+nav.navbar
+{
+  font-size: 24px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Заказ туров</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <script>
+        function ClickFunction () {
+            var val = document.getElementById("name").value;
+            var  mail = document.getElementById("email").value;
+            alert (val + " (" + mail +") " + ", Ваше сообщение успешно отправлено!");
+        }
+    </script>
+    <header>
+        <img src='logo.png' wight="100px"height='100px' align='middle' class='logo'/>
+        <h1 align = "center">  Меню</h1>
+        <hr>
+        <ol>
+            <li><a href="index.html">Главная</a></li>
+            <li ><a href="catalog.html">Каталог</a></li>
+            <li ><a href="about.html">Контакты</a></li>
+        </ol>
+        <hr>
+    </header>
+        <h2 align = "center"> 
+            <font color = "black">Сообщите нам
+        </h2>
+        <form action="registration.php">
+        <p align = "center"> 
+            <label for="name">Тема</label><Br>
+            <input type="text" id="name">
+        </p>
+        <p align = "center">
+            <label for="email">E-mail</label><Br>
+            <input type="email" id="email">
+        </p>
+        <p align = "center">
+            <label for="text">Текст сообщения</label><Br>
+            <textarea name="text" cols="40" rows="3"></textarea>
+        </p>
+        </form>
+            <p align = "center">
+                <button onclick="ClickFunction()">Отправить</button>
+            </p>
+            <hr>
+            <h2 align = "center">Контактные данные</h2>
+            <p align = "center">
+                inst: <a href="@best_tours">@best_tours</a>
+            </p>
+            <p align = "center">
+                Эл.почта: <a href="mailto:best_tours@gmail.ru">best_tours@gmail.ru</a>
+            </p>
+            <p align = "center">
+                Адрес: Рождественский б-р, 10\7с1, Москва
+            </p>
+            <div id="map" align = "center" style="width:1000px;height:1000px"></div>
+            <script>function myMap() {
+                var mapOptions = 
+                {
+                center: new google.maps.LatLng(55.76634466992523, 37.62612091004499),
+                zoom: 16, mapTypeId: google.maps.MapTypeId.HYBRID
+                }
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                }</script>
+                <script src="https://maps.googleapis.com/maps/api/js?callback=myMap">
+                            
+                 </script>
+        <hr>
+    <footer>
+        <span class="d-block p-3 bg-dark text-info">
+        <f class = "footer">&copy Все права защищены</f>
+    </footer>
+</body>
+</html>
